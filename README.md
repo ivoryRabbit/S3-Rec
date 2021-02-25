@@ -2,7 +2,7 @@
 ---
 
 ## Paper
-- [S$^3$-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization](https://arxiv.org/pdf/2008.07873.pdf)
+- [S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization](https://arxiv.org/pdf/2008.07873.pdf)
 
 ## Library Version Info
 - numpy == 1.19.2
