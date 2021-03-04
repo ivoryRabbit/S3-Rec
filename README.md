@@ -1,10 +1,8 @@
 # S3Rec
----
 
-## Paper
 - [S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization](https://arxiv.org/pdf/2008.07873.pdf)
 
-## Library Version Info
+## Library Info
 - numpy == 1.19.2
 - pandas == 1.1.3
 - tensorflow == 2.4.0
@@ -65,12 +63,12 @@ $> python evals.py run\
 
 ## 고찰
 
-현재 구현 결과는 논문의 결과보다 훨씬 좋지 않습니다. 실제 구현과는 다음과 같은 차이가 있을거라 생각합니다.
 
-1. 논문의 실제 구현과 본 구현에서의 차이
-   - 제 구현이 미흡하거나 착오가 있을 가능성이 있습니다.
-   - Loss를 구현하거나 negative sampling 하는 과정이 다른 것으로 보입니다.
+
+1. 현재 구현 결과는 논문의 결과보다 훨씬 좋지 않음
+   - 논문 수식에 오류가 있어 논문 공식 구현을 참조해야 함
+   - Loss를 구현하거나 negative sampling 하는 과정에서 차이가 있음
 
 2. 논문에 기록된 것보다 훨씬 적은 실제 Beauty 데이터의 Attribute 개수
    - 논문 1,221개 vs 실제 데이터 637개
-   - 이를 해결하고자 Amazon Beauty 데이터를 다운로드 받았으나, 이곳에서는 attribute에 해당하는 "category" 파트가 없었습니다.
+   - 이를 해결하고자 Amazon Beauty 데이터를 다운로드 받았으나, attribute에 해당하는 "category" 파트가 없었음
