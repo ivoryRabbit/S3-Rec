@@ -7,7 +7,7 @@
 - pandas == 1.1.3
 - tensorflow == 2.4.0
 - sklearn == 0.23.2
-- fire (argparse로 바꿀 예정)
+- fire
 - tqdm
 
 ## How to Run
@@ -63,8 +63,6 @@ $> python evals.py run\
 
 ## 고찰
 
-
-
 1. 현재 구현 결과는 논문의 결과보다 훨씬 좋지 않음
    - 논문 수식에 오류가 있어 논문 공식 구현을 참조해야 함
    - Loss를 구현하거나 negative sampling 하는 과정에서 차이가 있음
@@ -72,3 +70,9 @@ $> python evals.py run\
 2. 논문에 기록된 것보다 훨씬 적은 실제 Beauty 데이터의 Attribute 개수
    - 논문 1,221개 vs 실제 데이터 637개
    - 이를 해결하고자 Amazon Beauty 데이터를 다운로드 받았으나, attribute에 해당하는 "category" 파트가 없었음
+
+3. 나중에 개선해야할 점
+   - 논문의 pytorch 구현 참고하여 구현할 것
+   - argparse 써서 parameter 먹이기
+   - 디자인 패턴 고려해서 코드 리팩토링 필요
+   - tensorflow 공부 더해서 속도 측면에서 perfomance 올리기
