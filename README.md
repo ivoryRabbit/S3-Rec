@@ -12,7 +12,7 @@
 
 ## How to Run
 
-### 1. Pretrain
+### 1. Pretraining
 ~~~
 $> python pretrains.py run\
         --user_item_fname=data\Beauty.txt \
@@ -20,7 +20,7 @@ $> python pretrains.py run\
         --verbose=1
 ~~~
 
-### 2. Finetune
+### 2. Finetuning
 ~~~
 $> python main.py run\
         --user_item_fname=data\Beauty.txt \
@@ -36,7 +36,7 @@ $> python evals.py run\
         --use_pretrained=True
 ~~~
 
-### (extra) Non Finetune
+### (extra) Without Finetuning
 ~~~
 $> python main.py run\
         --user_item_fname=data\Beauty.txt \
