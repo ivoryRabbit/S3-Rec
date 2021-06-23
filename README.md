@@ -2,13 +2,12 @@
 
 - [S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization](https://arxiv.org/pdf/2008.07873.pdf)
 
-## Library Info
-- numpy == 1.19.2
-- pandas == 1.1.3
-- tensorflow == 2.4.0
-- sklearn == 0.23.2
-- fire
-- tqdm
+## Requirement
+~~~
+pip install -r requirements.txt
+~~~
+
+
 
 ## How to Run
 
