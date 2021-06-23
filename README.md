@@ -4,16 +4,14 @@
 
 ## Requirement
 ~~~
-pip install -r requirements.txt
+$> pip install -r requirements.txt
 ~~~
-
-
 
 ## How to Run
 
 ### 1. Pretraining
 ~~~
-$> python pretrains.py run\
+$> python pretrains.py run \
         --user_item_fname=data\Beauty.txt \
         --item_attr_fname=data\Beauty_item2attributes.json \
         --verbose=1
@@ -21,7 +19,7 @@ $> python pretrains.py run\
 
 ### 2. Finetuning
 ~~~
-$> python main.py run\
+$> python main.py run \
         --user_item_fname=data\Beauty.txt \
         --use_pretrained=True \
         --verbose=1
@@ -30,21 +28,21 @@ $> python main.py run\
 ### 3. Evaluation
 
 ~~~
-$> python evals.py run\
+$> python evals.py run \
         --user_item_fname=data\Beauty.txt \
         --use_pretrained=True
 ~~~
 
 ### (extra) Without Finetuning
 ~~~
-$> python main.py run\
+$> python main.py run \
         --user_item_fname=data\Beauty.txt \
         --use_pretrained=False \
         --verbose=1
 ~~~
 
 ~~~
-$> python evals.py run\
+$> python evals.py run \
         --user_item_fname=data\Beauty.txt \
         --use_pretrained=False
 ~~~
@@ -70,8 +68,8 @@ $> python evals.py run\
    - 논문 1,221개 vs 실제 데이터 637개
    - 이를 해결하고자 Amazon Beauty 데이터를 다운로드 받았으나, attribute에 해당하는 "category" 파트가 없었음
 
-3. 나중에 개선해야할 점
-   - 논문의 pytorch 구현 참고하여 구현할 것
-   - argparse 써서 parameter 먹이기
+3. TODO
+   - 논문의 pytorch 구현 참고하여 재현성을 높일 것
+   - fire 걷어내고 argparser 사용
    - 디자인 패턴 고려해서 코드 리팩토링 필요
-   - tensorflow 공부 더해서 속도 측면에서 perfomance 올리기
+   - tensorflow 공부, 속도 측면에서 perfomance 올리기
